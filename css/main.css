@@ -1,0 +1,148 @@
+/*
+-----Chamadas atraves de tag
+h1 {
+    color: green;
+}
+h2{
+    color: green;
+}
+------Chamada atraves do id
+#economy h2{
+    color: gold;
+}
+------Chamada atraves de classe
+.creation-date {
+    color: #ccc;
+}
+------Aplicação de estilo para o que não estar chamado
+* {
+    color:red;
+}*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Menu*/
+body > header {
+    background-color: #002861;
+    padding: 20px 0;
+    color: rgb(209, 208, 208);
+}
+h1, h2, h3, h4, time  {
+    font-family: sans-serif;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Menu Links 1 */
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+/*Menu Links 2 */
+header li a {
+    color: rgb(209, 208, 208);
+    text-decoration: none;
+}
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Estilo Imagem */
+.articles article img {
+    /* height: 180px; */
+    width: 100%;
+}
+.articles article {
+    width: 30%;
+}
+section {
+    padding: 16px 0;
+}
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;    
+} 
+/*Aparecia geral dos botoes "leia"*/
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.articles article a:hover{
+    text-decoration: underline;
+}
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.articles article h3 {
+    font-size: 24px;
+}
+section h2 {
+    font-size: 32px;
+}
+/*
+================================================================
+Cor de fundo da seção esportes*/
+#sports {
+    background-color:#affdc9;
+}
+/*Cor dos botões "leia" da seção esportes*/
+#sports .articles article a {
+    background-color: #009432;    
+}
+/*
+================================================================
+Cor de fundo da seção economia*/
+#economy {
+    background-color: #ffffc4;
+}
+/*Cor dos botões "leia" da seção economia*/
+#economy .articles article a{
+    background-color: #ff9f1a;
+}
+/*
+================================================================
+Cor de fundo da seção Entretenmento*/
+#entren {
+    background-color: rgb(253, 160, 160);
+}
+/* Cor dos botton "leia" */
+#entren .articles article a {
+    background-color: rgb(250, 89, 89);
+}
+/*
+================================================================
+Cor de fundo da seção Tecnologia*/
+#tecno {
+    background-color: rgb(168, 255, 255);
+}
+#tecno .articles article a {
+    background-color:rgb(2, 163, 163)
+}
+#rodape {
+    background-color: #002861;
+    color:#ccc;
+    text-align: center;
+    font: 100;
+    font-size: 10px;
+}
